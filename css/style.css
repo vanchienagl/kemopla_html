@@ -71,11 +71,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
 .footer {
   position: relative;
 }
-.footer .box-top {
-  height: 20rem;
+.footer-top {
+  height: 200px;
   background-color: #fcf8f0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,25 +93,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 8rem 8rem 0 0;
+  border-radius: 80px 80px 0 0;
   position: relative;
   overflow: hidden;
 }
-.footer .box-top::before, .footer .box-top::after {
+.footer-top::before, .footer-top::after {
   content: "";
   position: absolute;
-  width: 2.6rem;
-  height: 34.9rem;
+  width: 26px;
+  height: 350px;
   background: url(../../image/common/bg_line.png) no-repeat;
   background-position: center;
   background-size: contain;
   bottom: 0;
 }
-.footer .box-top::before {
-  left: 4.4rem;
+.footer-top::before {
+  left: 44px;
 }
-.footer .box-top::after {
-  right: 4.4rem;
+.footer-top::after {
+  right: 44px;
 }
 .footer .list-sns {
   display: -webkit-box;
@@ -116,43 +123,40 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2.4rem;
+  gap: 24px;
 }
 .footer .list-sns .item:first-child {
-  margin-right: 3.1rem;
+  margin-right: 31px;
 }
-.footer .box-bottom {
+.footer-bottom {
   background-color: #40210f;
-  padding-top: 19rem;
-  padding-bottom: 12.5rem;
+  padding-top: 190px;
+  padding-bottom: 125px;
 }
-.footer .box-bottom .wrap {
-  max-width: 103.2rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
+.footer-bottom .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
 }
-.footer .box-bottom .logo {
-  width: 24.8rem;
-  margin-top: 0.5rem;
+.footer-bottom .logo {
+  width: 248px;
+  margin-top: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.footer .box-bottom .logo:hover {
+.footer-bottom .logo:hover {
   opacity: 0.8;
 }
-.footer .box-bottom .info {
-  width: 47.7rem;
+.footer-bottom .info {
+  width: 477px;
 }
-.footer .box-bottom .btn-email {
+.footer-bottom .btn-email {
   width: 100%;
-  height: 5rem;
+  height: 50px;
   border: 1px solid #fff;
   border-radius: 6px;
   display: -webkit-box;
@@ -164,56 +168,60 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.4rem;
-  margin-bottom: 4rem;
+  gap: 14px;
+  margin-bottom: 40px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.footer .box-bottom .btn-email:hover {
+.footer-bottom .btn-email:hover {
   opacity: 0.8;
 }
-.footer .box-bottom .btn-email .icon {
-  width: 1.8rem;
+.footer-bottom .btn-email .icon {
+  width: 18px;
 }
-.footer .box-bottom .btn-email .text {
+.footer-bottom .btn-email .text {
   color: #fff;
 }
-.footer .box-bottom .menus {
+.footer-bottom .menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 13.5rem;
+  margin-bottom: 135px;
+  gap: 64px;
 }
-.footer .box-bottom .menu .item:not(:first-of-type) {
-  margin-top: 2rem;
+.footer-bottom .menu {
+  width: calc(50% - 32px);
 }
-.footer .box-bottom .menu .item a {
+.footer-bottom .menu .item:not(:first-of-type) {
+  margin-top: 20px;
+}
+.footer-bottom .menu .item a {
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.footer .box-bottom .menu .item a:hover {
+.footer-bottom .menu .item a:hover {
   opacity: 0.8;
 }
-.footer .box-bottom .menu-02 .item:not(:first-of-type) {
-  margin-top: 1rem;
+.footer-bottom .menu-02 .item:not(:first-of-type) {
+  margin-top: 10px;
 }
-.footer .box-bottom .menu-02 .item a {
-  font-size: 1.4rem;
+.footer-bottom .menu-02 .item a {
+  font-size: 14px;
 }
-.footer .box-bottom .copy-right {
-  font-size: 1.2rem;
+.footer-bottom .copy-right {
+  font-size: 12px;
   color: #fff;
   text-align: right;
 }
 .footer .page-to-top {
-  width: 16.8rem;
+  width: 168px;
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 10px;
+  right: 10px;
   cursor: pointer;
 }
 .footer .page-to-top img {
