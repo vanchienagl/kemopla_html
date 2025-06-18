@@ -1,0 +1,35 @@
+// ______________________________________________________
+// ______________________________________________________
+// .c-section-heading
+.c-section-heading {
+  padding: 42px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  h2 {
+    width: max-content;
+    font-family: 'Rationale', sans-serif;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(244, 164, 102, 1) 0%, rgba(255, 182, 0, 1) 50%, rgba(254, 206, 98, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  span {
+    width: max-content;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    color: #825A12;
+  }
+  &--2 {
+    h2 {
+      background: linear-gradient(90deg, rgba(101, 58, 24, 1) 0%, rgba(146, 67, 0, 1) 50%, rgba(255, 155, 31, 1) 100%);
+      background-clip: text;
+    }
+  }
+}

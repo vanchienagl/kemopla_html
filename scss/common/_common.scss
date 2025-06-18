@@ -1,6 +1,20 @@
-.container {
+.c-container {
   max-width: 1230px;
   width: 100%;
   margin: 0 auto;
   padding: 0 100px;
+}
+
+// TB
+@media screen and (max-width: 1024px) {
+  .c-container {
+    padding: 0 50px;
+  }
+}
+
+// SP
+@media screen and (max-width: 767px) {
+  .c-container {
+    padding: 0 20px;
+  }
 }

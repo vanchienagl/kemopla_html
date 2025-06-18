@@ -42,13 +42,14 @@
     background-color: #40210f;
     padding-top: 190px;
     padding-bottom: 125px;
-    .wrap {
+    .inner {
       display: flex;
       justify-content: space-between;
       gap: 20px;
     }
     .logo {
-      width: 248px;
+      max-width: 248px;
+      width: 100%;
       margin-top: 5px;
       transition: all 0.3s;
       &:hover {
@@ -56,7 +57,8 @@
       }
     }
     .info {
-      width: 477px;
+      max-width: 477px;
+      width: 100%;
     }
     .btn-email {
       width: 100%;
@@ -136,11 +138,37 @@
 // TB
 @media screen and (max-width: 1024px) {
   .footer {
+    &-bottom {
+      padding-top: 150px;
+      padding-bottom: 280px;
+
+      .inner {
+        gap: 60px;
+      }
+
+      .menus {
+        gap: 30px;
+        margin-bottom: 80px;
+      }
+
+      .menu {
+        width: calc(50% - 15px);
+        .item {
+          &:not(:first-of-type) {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    .page-to-top {
+      width: 150px;
+    }
   }
 }
 
 // SP
 @media screen and (max-width: 767px) {
   .footer {
+    background-color: green;
   }
 }
