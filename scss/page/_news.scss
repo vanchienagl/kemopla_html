@@ -28,17 +28,17 @@
       line-height: 1;
       padding: 2px 21px 5px;
       border-radius: 5px;
-      &.is-event {
+      &--orange {
         background-color: #f98630;
       }
-      &.is-cate-01 {
+      &--yellow {
         background-color: #fdda5b;
         color: #40210f;
       }
-      &.is-cate-02 {
+      &--blue {
         background-color: #2870a0;
       }
-      &.is-cate-03 {
+      &--green {
         background-color: #c3e2ed;
         color: #40210F;
       }
@@ -87,19 +87,9 @@
     width: 100%;
     .title {
       font-size: 16px;
-      padding-left: 25px;
-      margin-bottom: 45px;
-      position: relative;
-      &::before {
-        content: '';
-        width: 1px;
-        height: 45px;
-        background-color: #40210f;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-      }
+      padding: 10px 10px 10px 25px;
+      margin-bottom: 34px;
+      border-left: 1px solid #40210f;
     }
     .list {
       .item {
@@ -122,6 +112,7 @@
       }
       .brief {
         font-size: 18px;
+        font-weight: 400;
         line-height: 1.66;
         letter-spacing: 0.05em;
       }
@@ -151,7 +142,39 @@
 }
 
 // TB
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageNews {
+    .heading {
+      padding-bottom: 70px;
+    }
+    .inner {
+      gap: 30px;
+    }
+    .box-head {
+      gap: 30px;
+      margin-bottom: 15px;
+      .date {
+        font-size: 17px;
+      }
+      .label {
+        font-size: 14px;
+      }
+    }
+    .news-category {
+      max-width: 230px;
+    }
+    .news-content {
+      .list {
+        .link {
+          padding: 30px 80px 30px 30px;
+        }
+        .brief {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
 
 // SP
 @media screen and (max-width: 767px) {
@@ -191,6 +214,29 @@
     }
     .news-content {
       max-width: none;
+      .title {
+        padding: 7px 7px 7px 20px;
+        margin-bottom: 20px;
+      }
+      .list {
+        .item {
+          border-radius: 10px;
+        }
+        .link {
+          padding: 20px 75px 20px 20px;
+        }
+        .brief {
+          font-size: 14px;
+        }
+        .arrow {
+          width: 25px;
+          height: 25px;
+          right: 22px;
+          &::after {
+            width: 35px;
+          }
+        }
+      }
     }
   }
 }
@@ -200,8 +246,9 @@
 ======================================*/
 #pageNews.news-detail {
   .new-header {
-    .desc {
+    .new-title {
       font-size: 18px;
+      font-weight: 400;
       letter-spacing: 0.05em;
       line-height: 1.9;
     }
@@ -211,6 +258,36 @@
   }
   .new-content {
     margin-bottom: 100px;
+    h2,h3,h4 {
+      font-weight: 500;
+      margin: 20px 0;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 35px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    img {
+      margin: 50px 0;
+    }
+    ol {
+      list-style-type: decimal;
+      list-style-position: inside;
+      margin: 20px 0;
+      li {
+        line-height: 2;
+      }
+    }
+    ul {
+      margin: 20px 0;
+      li {
+        line-height: 2;
+      }
+    }
     p {
       &:not(:first-of-type) {
         margin-top: 50px;
@@ -249,20 +326,64 @@
 }
 
 // TB
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageNews.news-detail {
+    .new-header {
+      .new-title {
+        font-size: 17px;
+      }
+      padding-bottom: 30px;
+      margin-bottom: 45px;
+    }
+    .new-content {
+      margin-bottom: 100px;
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .new-navigation {
+      gap: 15px;
+      .link {
+        &.is-small {
+          width: 80px;
+          height: 50px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
 
 // SP
 @media screen and (max-width: 767px) {
   #pageNews.news-detail {
     .new-header {
-      .desc {
-        font-size: 14px;
+      .new-title {
+        font-size: 16px;
       }
       padding-bottom: 30px;
       margin-bottom: 30px;
     }
     .new-content {
-      margin-bottom: 70px;
+      margin-bottom: 60px;
+      h2 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 15px;
+      }
+      img {
+        margin: 30px 0;
+      }
       p {
         &:not(:first-of-type) {
           margin-top: 30px;

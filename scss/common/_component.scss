@@ -55,10 +55,28 @@
   }
 }
 
+// TB
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+// SP
+@media screen and (max-width: 767px) {
+ .c-pagination {
+    max-width: none;
+    gap: 40px;
+    margin-top: 50px;
+    .page {
+      gap: 30px;
+    }
+    .item {
+      font-size: 17px;
+    }
+  } 
+}
+
 /*====================================
-.c-foolow-us
+.c-follow-us
 ======================================*/
-.c-foolow-us {
+.c-follow-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +99,39 @@
     width: 50px;
     height: 50px;
     transition: all 0.3s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
+}
+
+// TB
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .c-follow-us {
+    gap: 10px;
+    position: fixed;
+    top: 250px;
+    right: 20px;
+  }
+}
+
+// SP
+@media screen and (max-width: 767px) {
+ .c-follow-us {
+    top: 150px;
+    right: 20px;
+    .item {
+      &:first-child {
+        width: 17px;
+        margin-bottom: 5px;
+      }
+      width: 30px;
+      height: 30px;
+    }
+  } 
 }
 
 /*====================================
@@ -218,7 +268,13 @@
 }
 
 // TB
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .c-arrowBtn-02 {
+    max-width: 250px;
+    padding: 25px 85px 25px 25px;
+    font-size: 14px;
+  }
+}
 
 // SP
 @media screen and (max-width: 767px) {
