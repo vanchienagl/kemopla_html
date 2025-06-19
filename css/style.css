@@ -1,4 +1,6 @@
-/* CSS Reset - Basic & Modern */
+/* ===================================
+CSS reset
+======================================*/
 *,
 *::before,
 *::after {
@@ -70,6 +72,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/*====================================
+.c-container
+======================================*/
 .c-container {
   max-width: 1230px;
   width: 100%;
@@ -87,6 +92,9 @@ body {
     padding: 0 20px;
   }
 }
+/*====================================
+.c-container-02
+======================================*/
 .c-container-02 {
   max-width: 1280px;
   width: 100%;
@@ -104,6 +112,9 @@ body {
     padding: 0 20px;
   }
 }
+/*====================================
+.break line
+======================================*/
 .pc {
   display: block;
 }
@@ -120,6 +131,9 @@ body {
     display: none;
   }
 }
+/* ===================================
+.footer 
+======================================*/
 .footer {
   position: relative;
   margin-top: 120px;
@@ -390,6 +404,9 @@ body {
     right: 20px;
   }
 }
+/*====================================
+.c-section-heading
+======================================*/
 .c-section-heading {
   padding: 42px 60px;
   display: -webkit-box;
@@ -436,6 +453,9 @@ body {
           background-clip: text;
 }
 
+/*====================================
+#pageNews
+======================================*/
 #pageNews .inner {
   width: 100%;
   display: -webkit-box;
