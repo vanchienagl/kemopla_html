@@ -1,3 +1,6 @@
+// ______________________________________________________
+// ______________________________________________________
+// .c-container
 .c-container {
   max-width: 1230px;
   width: 100%;
@@ -6,7 +9,7 @@
 }
 
 // TB
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .c-container {
     padding: 0 50px;
   }
@@ -16,5 +19,48 @@
 @media screen and (max-width: 767px) {
   .c-container {
     padding: 0 20px;
+  }
+}
+
+// ______________________________________________________
+// ______________________________________________________
+// .c-container-02
+.c-container-02 {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+// TB
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .c-container-02 {
+    padding: 0 50px;
+  }
+}
+
+// SP
+@media screen and (max-width: 767px) {
+  .c-container-02 {
+    padding: 0 20px;
+  }
+}
+
+// ______________________________________________________
+// ______________________________________________________
+// break line
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+// SP
+@media screen and (max-width: 767px) {
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
   }
 }

@@ -1,1 +1,115 @@
-#pageNews {}
+#pageNews {
+  .inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+  }
+  .news-category {
+    max-width: 280px;
+    width: 100%;
+    background-color: #fbf8ef;
+    padding: 30px 25px;
+    border-radius: 20px;
+    align-self: flex-start;
+    .title {
+      margin-bottom: 15px;
+      .ja {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .en {
+        display: block;
+        font-size: 14px;
+      }
+    }
+    .list {
+      .item {
+        &:not(:first-child) {
+          border-top: 1px solid gray;
+        }
+        padding: 30px 0;
+        a {
+          display: block;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .news-content {
+    max-width: 755px;
+    width: 100%;
+    .title {
+      font-size: 16px;
+      padding-left: 25px;
+      margin-bottom: 45px;
+      position: relative;
+      &::before {
+        content: '';
+        width: 1px;
+        height: 45px;
+        background-color: #40210f;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+    .list {
+      .item {
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+        background-color: #fff;
+        border: 1px solid gray;
+        border-radius: 20px;
+        padding: 40px 135px 40px 40px;
+      }
+      .link {}
+      .head {}
+      .date {}
+      .label {}
+      .arrow {}
+    }
+  }
+  .pagination {
+    max-width: 755px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 75px;
+    .arrow {
+      &-prev{}
+      &-next{}
+    }
+    .page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .item {
+      &.active {}
+      &.dots {}
+    }
+  }
+}
+
+// TB
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+// SP
+@media screen and (max-width: 767px) {
+  #pageNews {
+    .inner {
+      flex-direction: column;
+    }
+    .news-category {
+      max-width: none;
+    }
+    .news-content {
+      max-width: none;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .footer {
   position: relative;
+  margin-top: 120px;
   &-top {
     height: 200px;
     background-color: #fcf8f0;
@@ -14,10 +15,10 @@
       content: '';
       position: absolute;
       width: 26px;
-      height: 350px;
+      height: 220px;
       background: url(../../image/common/bg_line.png) no-repeat;
-      background-position: center;
-      background-size: contain;
+      background-position: center bottom;
+      background-size: cover;
       bottom: 0;
     }
     &::before {
@@ -63,6 +64,7 @@
     .btn-email {
       width: 100%;
       height: 50px;
+      padding: 0 10px;
       border: 1px solid #fff;
       border-radius: 6px;
       display: flex;
@@ -136,7 +138,7 @@
 }
 
 // TB
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .footer {
     &-bottom {
       padding-top: 150px;
@@ -169,6 +171,95 @@
 // SP
 @media screen and (max-width: 767px) {
   .footer {
-    background-color: green;
+    &-top {
+      border-radius: 40px 40px 0 0;
+      padding: 0 10px;
+      height: 100px;
+      &::before,
+      &::after {
+        width: 13px;
+        height: 120px;
+      }
+      &::before {
+        left: 10px;
+      }
+      &::after {
+        right: 10px;
+      }
+    }
+    .list-sns {
+      gap: 12px;
+      .item {
+        &:first-child {
+          width: 87px;
+          margin-right: 10px;
+        }
+        width: 30px;
+      }
+    }
+    &-bottom {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .inner {
+        flex-direction: column;
+        gap: 53px;
+      }
+      .logo {
+        max-width: 187px;
+        margin: 0 auto;
+      }
+      .info {
+        max-width: none;
+      }
+      .btn-email {
+        .text {
+          font-size: 13px;
+        }
+      }
+
+      .menus {
+        flex-direction: column;
+        margin-bottom: 77px;
+        gap: 0;
+      }
+
+      .menu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .item {
+          &:not(:first-of-type) {
+            margin-top: 0;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .menu-02 {
+        border-top: 1px solid #fff;
+        padding-top: 30px;
+        margin-top: 30px;
+        gap: 15px;
+        .item {
+          &:not(:first-of-type) {
+            margin-top: 0;
+          }
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+      .copy-right {
+        font-size: 11px;
+        text-align: left;
+      }
+    }
+    .page-to-top {
+      width: 84px;
+      bottom: 0;
+      right: 20px;
+    }
   }
 }
