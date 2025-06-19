@@ -2,11 +2,46 @@
 #pageNews
 ======================================*/
 #pageNews {
+  .heading {
+    padding-bottom: 106px;
+  }
   .inner {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 45px;
+  }
+  .box-head {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    margin-bottom: 20px;
+    .date {
+      font-size: 18px;
+      color: #40210F;
+      line-height: 1;
+    }
+    .label {
+      font-size: 15px;
+      background-color: #40210f;
+      color: #fff;
+      line-height: 1;
+      padding: 2px 21px 5px;
+      border-radius: 5px;
+      &.is-event {
+        background-color: #f98630;
+      }
+      &.is-cate-01 {
+        background-color: #fdda5b;
+        color: #40210f;
+      }
+      &.is-cate-02 {
+        background-color: #2870a0;
+      }
+      &.is-cate-03 {
+        background-color: #c3e2ed;
+      }
+    }
   }
   .news-category {
     max-width: 280px;
@@ -17,24 +52,30 @@
     align-self: flex-start;
     .title {
       margin-bottom: 15px;
+      letter-spacing: 0.01em;
       .ja {
         font-size: 16px;
-        font-weight: 500;
       }
       .en {
         display: block;
         font-size: 14px;
+        font-weight: 500;
+        color: #40210F30;
       }
     }
     .list {
       .item {
         &:not(:first-child) {
-          border-top: 1px solid gray;
+          border-top: 1px solid #40210F10;
         }
         padding: 30px 0;
         a {
           display: block;
           font-size: 16px;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }
@@ -61,40 +102,97 @@
     .list {
       .item {
         &:not(:first-child) {
-          margin-top: 10px;
+          margin-top: 12px;
+        }
+        &:hover {
+          opacity: 0.7;
         }
         background-color: #fff;
-        border: 1px solid gray;
-        border-radius: 20px;
-        padding: 40px 135px 40px 40px;
+        border: 1px solid #40210F;
+        border-radius: 15px;
+        padding: 40px 100px 40px 40px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0 0 40px;
+        position: relative;
+        transition: all 0.3s;
       }
-      .link {}
-      .head {}
-      .date {}
-      .label {}
-      .arrow {}
+      .brief {
+        font-size: 18px;
+        letter-spacing: 0.05em;
+      }
+      .arrow {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #40210f;
+        position: absolute;
+        top: 50%;
+        right: 22px;
+        transform: translateY(-50%);
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          width: 41px;
+          height: 6px;
+          transform: translateY(-72%) skewX(45deg);
+          border-bottom: 1px solid #40210f;
+          border-right: 1px solid #40210f;
+        }
+      }
     }
   }
-  .pagination {
-    max-width: 755px;
-    width: 100%;
+}
+
+/*====================================
+#Page News Detail
+======================================*/
+#pageNews.news-detail {
+  .header {
+    .desc {
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      line-height: 1.9;
+    }
+    border-bottom: 1px solid #000;
+    padding-bottom: 35px;
+    margin-bottom: 53px;
+  }
+  .content {
+    margin-bottom: 100px;
+    p {
+      &:not(:first-of-type) {
+        margin-top: 50px;
+      }
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      line-height: 2.5;
+    }
+  }
+  .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-top: 75px;
-    .arrow {
-      &-prev{}
-      &-next{}
-    }
-    .page {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .item {
-      &.active {}
-      &.dots {}
+    .link {
+      &.is-small {
+        width: 100px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        color: #40210F;
+        border: 1px solid #40210F;
+        border-radius: 49px;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+      transition: all 0.3s;
     }
   }
 }
