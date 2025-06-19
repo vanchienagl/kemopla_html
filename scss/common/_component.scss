@@ -216,3 +216,25 @@
     border-right: 1px solid #40210F;
   }
 }
+
+// TB
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+// SP
+@media screen and (max-width: 767px) {
+  .c-arrowBtn-02 {
+    max-width: none;
+    width: 200px;
+    padding: 20px 50px 20px 15px;
+    font-size: 14px;
+    &::before {
+      right: 15px;
+      width: 25px;
+      height: 25px;
+    }
+    &::after {
+      right: 26px;
+      width: 30px;
+    }
+  }
+}
