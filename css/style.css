@@ -383,7 +383,7 @@ body {
     font-size: 14px;
   }
   .footer-bottom .menu-02 {
-    border-top: 1px solid #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.4392156863);
     padding-top: 30px;
     margin-top: 30px;
     gap: 15px;
