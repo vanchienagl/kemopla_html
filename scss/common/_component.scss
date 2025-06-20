@@ -31,7 +31,11 @@
     gap: 40px;
   }
   .item {
+    position: relative;
     &.active {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
       color: #808080;
       &::after {
         content: '';
@@ -47,11 +51,12 @@
     &:hover {
       color: #808080;
     }
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000;
-    position: relative;
+    a {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: #000;
+    }
   }
 }
 
@@ -85,6 +90,7 @@
   position: fixed;
   top: 331px;
   right: 42px;
+  z-index: 10;
   .item {
     &:first-child {
       margin-bottom: 15px;
@@ -243,6 +249,10 @@
   color: #40210F;
   border: 1px solid #40210F;
   border-radius: 49px;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
   &::before {
     position: absolute;
     top: 50%;
