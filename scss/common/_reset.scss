@@ -27,24 +27,25 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-header, footer, main, section, div, a, p, h1, h2, h3, h4, h5, h6, span, ul, ol, li, label, table, input, button, textarea, select, input[type="radio"], input[type="checkbox"] {
+header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, h3, h4, h5, h6, p, span, strong, em, small, mark, ul, ol, li, table, thead, tbody, tfoot, tr, th, td, dl, dt, dd, a, label, button, textarea, select, input, input[type="radio"], input[type="checkbox"], img, picture, video, canvas, svg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
   color: #40210f;
 }
 
-input, button, textarea, select {
-  font: inherit;
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  min-width: auto;
+  min-height: auto;
 }
 
 .label {
@@ -55,6 +56,12 @@ input, button, textarea, select {
   font-weight: 400;
   text-align: left;
   white-space: unset;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
