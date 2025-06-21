@@ -4,11 +4,9 @@ CSS reset
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #40210f;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -36,13 +34,35 @@ img, picture, video, canvas, svg {
   height: auto;
 }
 
+header, footer, main, section, div, a, p, h1, h2, h3, h4, h5, h6, span, ul, ol, li, label, table, input, button, textarea, select, input[type="radio"], input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  color: #40210f;
+}
+
 input, button, textarea, select {
   font: inherit;
+}
+
+.label {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 400;
+  text-align: left;
+  white-space: unset;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  &:hover {
+    color: inherit;
+  }
 }
 
 ul, ol {

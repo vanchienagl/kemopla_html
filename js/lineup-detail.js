@@ -12,9 +12,17 @@ $(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      768: {
+        spaceBetween: 25, // Tablet (≥768px)
+      },
+      0: {
+        spaceBetween: 12, // Mobile (<768px)
+      },
+    },
   });
   
-  const thumbs = document.querySelectorAll('.thumb-list img');
+  const thumbs = document.querySelectorAll('.thumb-list .image');
   thumbs.forEach((thumb, i) => {
     thumb.addEventListener('click', () => {
       mainSwiper.slideToLoop(i);
