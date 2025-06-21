@@ -121,7 +121,6 @@
   .c-follow-us {
     gap: 10px;
     position: fixed;
-    top: 250px;
     right: 20px;
   }
 }
@@ -129,7 +128,6 @@
 // SP
 @media screen and (max-width: 767px) {
  .c-follow-us {
-    top: 150px;
     right: 20px;
     .item {
       &:first-child {
