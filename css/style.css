@@ -1767,6 +1767,11 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+#pageLineupDetail .product-slider .main-slider .swiper-button-prev::before, #pageLineupDetail .product-slider .main-slider .swiper-button-prev::after,
+#pageLineupDetail .product-slider .main-slider .swiper-button-next::before,
+#pageLineupDetail .product-slider .main-slider .swiper-button-next::after {
+  display: none;
+}
 #pageLineupDetail .product-slider .main-slider .swiper-button-prev {
   left: 25%;
   border-width: 0 0 1px 1px;

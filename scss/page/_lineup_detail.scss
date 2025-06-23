@@ -21,6 +21,10 @@
       }
       .swiper-button-prev,
       .swiper-button-next {
+        &::before,
+        &::after {
+          display: none;
+        }
         width: 60px;
         height: 60px;
         border-style: solid;
