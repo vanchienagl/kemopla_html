@@ -1,5 +1,7 @@
 // Slider Product Detail Lineup
 $(function () {
+  const thumbs = document.querySelectorAll('.js_thumb_list .image');
+
   const mainSwiper = new Swiper('.js_main_slider', {
     slidesPerView: 'auto',
     loop: true,
@@ -11,15 +13,22 @@ $(function () {
     },
     breakpoints: {
       768: {
-        spaceBetween: 25, // Tablet (≥768px)
+        spaceBetween: 25,
       },
       0: {
-        spaceBetween: 12, // Mobile (<768px)
+        spaceBetween: 12,
+      },
+    },
+    on: {
+      slideChange: function () {
+        const realIndex = this.realIndex;
+        thumbs.forEach((t, i) => {
+          t.classList.toggle('active', i === realIndex);
+        });
       },
     },
   });
-  
-  const thumbs = document.querySelectorAll('.js_thumb_list .image');
+
   thumbs.forEach((thumb, i) => {
     thumb.addEventListener('click', () => {
       mainSwiper.slideToLoop(i);
@@ -27,5 +36,6 @@ $(function () {
       thumb.classList.add('active');
     });
   });
+
   thumbs[0].classList.add('active');
 });
