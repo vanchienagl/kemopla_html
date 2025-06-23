@@ -69,6 +69,7 @@ $(function () {
   const nextBtn = document.getElementById('nextButton');
   const prevBtn = document.getElementById('prevButton');
   const closeBtn = document.getElementById('popupClose');
+  const cFollowUs = document.querySelector('.c-follow-us');
 
   let currentIndex = 0;
   const imageSources = Array.from(items).map(img => img.src);
@@ -83,10 +84,12 @@ $(function () {
   function showPopup(src) {
     popupImg.src = src;
     popup.classList.add('active');
+    cFollowUs.style.zIndex = '0';
   }
 
   function closePopup() {
     popup.classList.remove('active');
+    cFollowUs.style.zIndex = '11';
   }
 
   nextBtn.addEventListener('click', () => {

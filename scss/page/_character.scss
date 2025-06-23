@@ -366,7 +366,7 @@
   #pageCharacter {
     .character {
       .inner {
-        padding-top: 200px;
+        padding-top: 90px;
         padding-bottom: 65px;
       }
     }
@@ -387,14 +387,12 @@
       margin-bottom: 15px;
     }
     .main-image {
-      top: 40px;
-      left: 0;
+      position: static;
       width: 100%;
-      height: auto;
-      img {
-        width: auto;
-        height: auto;
-      }
+      height: 100%;
+      aspect-ratio: auto;
+      padding: 0 40px;
+      margin-bottom: 40px;
     }
     .information {
       padding: 0 20px;

@@ -2548,7 +2548,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #pageCharacter .character .inner {
-    padding-top: 200px;
+    padding-top: 90px;
     padding-bottom: 65px;
   }
   #pageCharacter .tab-content {
@@ -2568,14 +2568,12 @@ body {
     margin-bottom: 15px;
   }
   #pageCharacter .main-image {
-    top: 40px;
-    left: 0;
+    position: static;
     width: 100%;
-    height: auto;
-  }
-  #pageCharacter .main-image img {
-    width: auto;
-    height: auto;
+    height: 100%;
+    aspect-ratio: auto;
+    padding: 0 40px;
+    margin-bottom: 40px;
   }
   #pageCharacter .information {
     padding: 0 20px;
