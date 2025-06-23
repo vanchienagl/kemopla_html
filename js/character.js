@@ -1,3 +1,5 @@
+const cFollowUs = document.querySelector('.c-follow-us');
+
 /*====================================
   Tab Content
 ======================================*/
@@ -25,7 +27,6 @@ $(function () {
   const thumbnails = document.querySelectorAll('.js_movie_thumb');
   const popups = document.querySelectorAll('.js_video_popup');
   const closeBtns = document.querySelectorAll('.js_close_btn');
-  const cFollowUs = document.querySelector('.c-follow-us');
 
   thumbnails.forEach((thumbnail, index) => {
     const popup = popups[index];
@@ -73,7 +74,6 @@ $(function () {
   const nextBtn = document.getElementById('nextButton');
   const prevBtn = document.getElementById('prevButton');
   const closeBtn = document.getElementById('popupClose');
-  const cFollowUs = document.querySelector('.c-follow-us');
 
   let currentIndex = 0;
   const imageSources = Array.from(items).map(img => img.src);
