@@ -139,7 +139,7 @@
     }
     .label {
       width: 70px;
-      padding-top: 3px;
+      padding-top: 1px;
       align-self: flex-start;
       font-size: 16px;
       color: #fff;
@@ -181,7 +181,6 @@
       transition: all 0.3s;
       &:hover {
         opacity: 0.8;
-        border-color: #999;
       }
       img {
         width: 100%;
@@ -251,12 +250,12 @@
     cursor: pointer;
   }
   .popup-prev {
-    right: 20px;
-    border-width: 1px 1px 0 0;
-  }
-  .popup-next {
     left: 20px;
     border-width: 0 0 1px 1px;
+  }
+  .popup-next {
+    right: 20px;
+    border-width: 1px 1px 0 0;
   }
   .popup-close {
     position: absolute;

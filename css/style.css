@@ -2301,7 +2301,7 @@ body {
 }
 #pageCharacter .profile .label {
   width: 70px;
-  padding-top: 3px;
+  padding-top: 1px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 16px;
@@ -2349,7 +2349,6 @@ body {
 }
 #pageCharacter .gallery .image:hover {
   opacity: 0.8;
-  border-color: #999;
 }
 #pageCharacter .gallery .image img {
   width: 100%;
@@ -2430,12 +2429,12 @@ body {
   cursor: pointer;
 }
 #pageCharacter .popup-prev {
-  right: 20px;
-  border-width: 1px 1px 0 0;
-}
-#pageCharacter .popup-next {
   left: 20px;
   border-width: 0 0 1px 1px;
+}
+#pageCharacter .popup-next {
+  right: 20px;
+  border-width: 1px 1px 0 0;
 }
 #pageCharacter .popup-close {
   position: absolute;
