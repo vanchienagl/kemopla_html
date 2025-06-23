@@ -2382,6 +2382,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  letter-spacing: 0.05em;
 }
 #pageCharacter .popup-overlay {
   position: fixed;
