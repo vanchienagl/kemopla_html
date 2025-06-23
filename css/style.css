@@ -2331,14 +2331,76 @@ body {
 #pageCharacter .movie {
   margin-bottom: 73px;
 }
-#pageCharacter .movie .video {
-  aspect-ratio: 388/259;
+#pageCharacter .movie-thumb {
+  width: 100%;
+  aspect-ratio: 388/258;
+  cursor: pointer;
 }
-#pageCharacter .movie iframe {
+#pageCharacter .movie-thumb img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#pageCharacter .movie .video-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 11;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#pageCharacter .movie .video-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+#pageCharacter .movie .video-content {
+  position: relative;
+  background: #000;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 580px;
+  width: 100%;
+  max-height: 340px;
+  height: 100%;
+}
+#pageCharacter .movie .video-wrapper {
+  aspect-ratio: 580/340;
+  width: 100%;
+  height: 100%;
+}
+#pageCharacter .movie .video-wrapper iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#pageCharacter .movie .close-btn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 1;
+  text-align: center;
 }
 #pageCharacter .gallery .list {
   display: -ms-grid;
@@ -2365,10 +2427,6 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-#pageCharacter .episode {
-  position: relative;
-  z-index: 1;
 }
 #pageCharacter .episode .description {
   background-color: rgba(0, 0, 0, 0.0823529412);
@@ -2551,6 +2609,10 @@ body {
   }
   #pageCharacter .movie {
     margin-bottom: 40px;
+  }
+  #pageCharacter .movie .video-content {
+    width: calc(100% - 40px);
+    max-height: 270px;
   }
   #pageCharacter .gallery .list {
     gap: 10px;

@@ -19,6 +19,38 @@ $(function () {
 });
 
 /*====================================
+  Movie Popup
+======================================*/
+$(function () {
+  const thumbnails = document.querySelectorAll('.js_movie_thumb');
+  const popups = document.querySelectorAll('.js_video_popup');
+  const closeBtns = document.querySelectorAll('.js_close_btn');
+  const cFollowUs = document.querySelector('.c-follow-us');
+
+  thumbnails.forEach((thumbnail, index) => {
+    const popup = popups[index];
+    const closeBtn = closeBtns[index];
+
+    thumbnail.addEventListener('click', () => {
+      popup.classList.add('active');
+      cFollowUs.style.zIndex = '0';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popup.classList.remove('active');
+      cFollowUs.style.zIndex = '11';
+    });
+
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.classList.remove('active');
+        cFollowUs.style.zIndex = '11';
+      }
+    });
+  });
+});
+
+/*====================================
   Popup Gallery
 ======================================*/
 $(function () {
