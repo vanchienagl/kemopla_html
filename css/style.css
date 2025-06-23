@@ -2190,7 +2190,7 @@ body {
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#6B9CC4), color-stop(#A6C4E1), color-stop(#C9CEC5), to(#EDC874));
   background-image: linear-gradient(to bottom, #6B9CC4, #A6C4E1, #C9CEC5, #EDC874);
-  border-radius: 49px;
+  border-radius: 148px;
   overflow: hidden;
 }
 #pageCharacter .tab-content.active {
@@ -2213,7 +2213,7 @@ body {
   color: #fff;
   line-height: 1;
   letter-spacing: 0.1em;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 #pageCharacter .main-image {
   position: absolute;
@@ -2244,8 +2244,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 45px;
-  margin-bottom: 43px;
+  gap: 37px;
+  margin-left: -12px;
+  margin-bottom: 50px;
 }
 #pageCharacter .sub-title .ja {
   font-weight: 400;
@@ -2263,12 +2264,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 35px;
+  gap: 33px;
   font-weight: 500;
   font-size: 25px;
   color: #fff;
   line-height: 1;
   letter-spacing: 0.1em;
+  margin-top: 10px;
   position: relative;
 }
 #pageCharacter .sub-title .en::before {
@@ -2282,7 +2284,10 @@ body {
   background-color: rgba(0, 0, 0, 0.0823529412);
   border-radius: 10px;
   padding: 22px 26px 22px 28px;
-  margin-bottom: 51px;
+  margin-bottom: 56px;
+}
+#pageCharacter .profile .title {
+  margin-bottom: 22px;
 }
 #pageCharacter .profile .item {
   display: -webkit-box;
@@ -2297,7 +2302,7 @@ body {
   gap: 10px;
 }
 #pageCharacter .profile .item:not(:first-child) {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #pageCharacter .profile .label {
   width: 70px;
@@ -2450,6 +2455,9 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageCharacter .tab-content {
+    border-radius: 80px;
+  }
   #pageCharacter .main-title {
     top: -75px;
     left: 0;
@@ -2480,7 +2488,7 @@ body {
     padding-bottom: 65px;
   }
   #pageCharacter .tab-content {
-    border-radius: 30px;
+    border-radius: 40px;
   }
   #pageCharacter .tab-buttons {
     margin: 0 auto 45px;
@@ -2519,6 +2527,9 @@ body {
   #pageCharacter .profile {
     padding: 15px;
     margin-bottom: 25px;
+  }
+  #pageCharacter .profile .title {
+    margin-bottom: 15px;
   }
   #pageCharacter .profile .item {
     gap: 7px;
