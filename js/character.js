@@ -54,6 +54,10 @@ $(function () {
       if (e.target === popup) {
         popup.classList.remove('active');
         cFollowUs.style.zIndex = '11';
+        
+        if (iframe) {
+          iframe.src = iframe.src;
+        }
       }
     });
   });
