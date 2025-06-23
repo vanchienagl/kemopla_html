@@ -1,4 +1,6 @@
-// Slider Product Detail Lineup
+/*====================================
+  Slider Product Detail Lineup
+======================================*/
 $(function () {
   const thumbs = document.querySelectorAll('.js_thumb_list .image');
 

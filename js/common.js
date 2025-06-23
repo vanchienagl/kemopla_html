@@ -1,4 +1,6 @@
-// Button Back To Top
+/*====================================
+  Button Back To Top
+======================================*/
 $(function () {
   const $backToTopBtn = $(".js_page_to_top");
   $backToTopBtn.on("click", function () {

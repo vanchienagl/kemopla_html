@@ -1,4 +1,6 @@
-// Tab Content
+/*====================================
+  Tab Content
+======================================*/
 $(function () {
   const buttons = document.querySelectorAll(".tab-btn");
   const contents = document.querySelectorAll(".tab-content");
@@ -16,7 +18,9 @@ $(function () {
   });
 });
 
-// Popup Gallery
+/*====================================
+  Popup Gallery
+======================================*/
 $(function () {
   const items = document.querySelectorAll('.js_gallery_list img');
   const popup = document.getElementById('popupCharacter');
