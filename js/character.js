@@ -30,15 +30,24 @@ $(function () {
   thumbnails.forEach((thumbnail, index) => {
     const popup = popups[index];
     const closeBtn = closeBtns[index];
+    const iframe = popup.querySelector('.js_video_popup iframe');
 
     thumbnail.addEventListener('click', () => {
       popup.classList.add('active');
       cFollowUs.style.zIndex = '0';
+
+      if (iframe.dataset.src) {
+        iframe.src = iframe.dataset.src + "?autoplay=1";
+      }
     });
 
     closeBtn.addEventListener('click', () => {
       popup.classList.remove('active');
       cFollowUs.style.zIndex = '11';
+
+      if (iframe) {
+        iframe.src = iframe.src;
+      }
     });
 
     popup.addEventListener('click', (e) => {
