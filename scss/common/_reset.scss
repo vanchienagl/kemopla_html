@@ -8,25 +8,21 @@ CSS reset
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow: auto;
 }
-
 body {
   text-rendering: optimizeSpeed;
   -webkit-text-size-adjust: 100%;
 }
-
 header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, h3, h4, h5, h6, p, span, strong, em, small, mark, ul, ol, li, table, thead, tbody, tfoot, tr, th, td, dl, dt, dd, a, label, button, textarea, select, input, input[type="radio"], input[type="checkbox"], img, picture, video, canvas, svg {
   margin: 0;
   padding: 0;
@@ -37,7 +33,6 @@ header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, 
   line-height: 1.5;
   color: #40210f;
 }
-
 .container {
   &::before,
   &::after {
@@ -51,11 +46,9 @@ header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, 
   min-width: auto;
   min-height: auto;
 }
-
 .footer > * {
   max-width: none;
 }
-
 .label {
   display: inline-block;
   margin: 0;
@@ -66,13 +59,19 @@ header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, 
   text-align: left;
   white-space: unset;
 }
-
+.row {
+  margin: 0;
+  padding: 0;
+  &::before,
+  &::after {
+    display: none;
+  }
+}
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -80,11 +79,9 @@ a {
     color: inherit;
   }
 }
-
 ul, ol {
   list-style: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
