@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Rationale&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/standalone.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -20,7 +21,7 @@
     
     <div class="product-slider">
       <!-- Main Slider -->
-      <div class="swiper main-slider">
+      <div class="js_main_slider swiper main-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./image/lineup-detail/sample_01.png" alt="Slide 1" /></div>
           <div class="swiper-slide"><img src="./image/lineup-detail/sample_02.png" alt="Slide 2" /></div>
@@ -38,17 +39,37 @@
         <div class="swiper-button-prev"></div>
       </div>
       <!-- Thumbnail List -->
-      <div class="thumb-list">
-        <img src="./image/lineup-detail/sample_01.png" alt="Slide 1" />
-        <img src="./image/lineup-detail/sample_02.png" alt="Slide 2" />
-        <img src="./image/lineup-detail/sample_03.png" alt="Slide 3" />
-        <img src="./image/lineup-detail/sample_04.png" alt="Slide 4" />
-        <img src="./image/lineup-detail/sample_05.png" alt="Slide 5" />
-        <img src="./image/lineup-detail/sample_06.png" alt="Slide 6" />
-        <img src="./image/lineup-detail/sample_07.png" alt="Slide 7" />
-        <img src="./image/lineup-detail/sample_08.png" alt="Slide 8" />
-        <img src="./image/lineup-detail/sample_09.png" alt="Slide 9" />
-        <img src="./image/lineup-detail/sample_10.png" alt="Slide 10" />
+      <div class="js_thumb_list thumb-list">
+        <div class="image">
+          <img src="./image/lineup-detail/sample_01.png" alt="Slide 1" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_02.png" alt="Slide 2" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_03.png" alt="Slide 3" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_04.png" alt="Slide 4" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_05.png" alt="Slide 5" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_06.png" alt="Slide 6" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_07.png" alt="Slide 7" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_08.png" alt="Slide 8" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_09.png" alt="Slide 9" />
+        </div>
+        <div class="image">
+          <img src="./image/lineup-detail/sample_10.png" alt="Slide 10" />
+        </div>
       </div>
     </div>
 
@@ -65,9 +86,9 @@
         <p class="f-mont price">¥0,000</p>
         <p class="f-mont soldout">SOLD OUT</p>
         <div class="button-wrap">
-          <a href="#" class="button button-add-to-cart">
+          <a href="#" class="c-arrowBtn-03 button button-add-to-cart">
             <span class="icon"><img src="./image/lineup-detail/icon_cart.svg" alt="cart"></span>
-            <span class="text">一覧に戻る</span>
+            <span class="text">カートに入れる</span>
           </a>
           <a href="#" class="c-arrowBtn-02 button button button-simulation">シミュレーションをする</a>
         </div>
@@ -81,24 +102,28 @@
           <p>こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。</p>
           <p>こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。こちらに商品の説明が入ります。</p>
         </div>
-        <ul class="detail-list">
-          <li class="item">
-            <p class="label">商品名</p>
-            <p class="value">商品名が入ります商品名が入ります商品名が入ります</p>
-          </li>
-          <li class="item">
-            <p class="label">発売月</p>
-            <p class="value">2025年00月</p>
-          </li>
-          <li class="item">
-            <p class="label">価格</p>
-            <p class="value">00,000円</p>
-          </li>
-          <li class="item">
-            <p class="label">セット内容</p>
-            <p class="value">（例）ボディーパーツ/ヘッド/表情パーツ3種…</p>
-          </li>
-        </ul>
+        <dl class="detail-list">
+          <div class="item">
+            <dt class="label">商品名</dt>
+            <dd class="value">商品名が入ります商品名が入ります商品名が入ります</đ>
+          </div>
+          <div class="item">
+            <dt class="label">発売月</dt>
+            <dd class="value">2025年00月</dd>
+          </div>
+          <div class="item">
+            <dt class="label">価格</dt>
+            <dd class="value">00,000円</dd>
+          </div>
+          <div class="item">
+            <dt class="label">セット内容</dt>
+            <dd class="value">（例）ボディーパーツ/ヘッド/表情パーツ3種…</dd>
+          </div>
+          <div class="item">
+            <dt class="label">JANコード</dt>
+            <dd class="value">0000000000000</dd>
+          </div>
+        </dl>
         <a href="#" class="c-arrowBtn-02 button-back">一覧に戻る</a>
       </div>
     </div>
@@ -207,7 +232,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/common.js"></script>
-  <script src="./js/lineup.js"></script>
+  <script src="./js/lineup-detail.js"></script>
 
 </body>
 

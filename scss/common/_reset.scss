@@ -4,11 +4,9 @@ CSS reset
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #40210f;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -29,6 +27,45 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, h3, h4, h5, h6, p, span, strong, em, small, mark, ul, ol, li, table, thead, tbody, tfoot, tr, th, td, dl, dt, dd, a, label, button, textarea, select, input, input[type="radio"], input[type="checkbox"], img, picture, video, canvas, svg {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #40210f;
+}
+
+.container {
+  &::before,
+  &::after {
+    display: none;
+  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  min-width: auto;
+  min-height: auto;
+}
+
+.footer > * {
+  max-width: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 400;
+  color: #40210f;
+  text-align: left;
+  white-space: unset;
+}
 
 img, picture, video, canvas, svg {
   display: block;
@@ -36,13 +73,12 @@ img, picture, video, canvas, svg {
   height: auto;
 }
 
-input, button, textarea, select {
-  font: inherit;
-}
-
 a {
   text-decoration: none;
   color: inherit;
+  &:hover {
+    color: inherit;
+  }
 }
 
 ul, ol {
