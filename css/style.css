@@ -2548,7 +2548,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #pageCharacter .character .inner {
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 65px;
   }
   #pageCharacter .tab-content {
