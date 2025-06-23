@@ -1486,7 +1486,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-#pageLineup .btn-cancel {
+#pageLineup .btn-clear {
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1509,7 +1509,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-#pageLineup .btn-cancel::before {
+#pageLineup .btn-clear::before {
   content: "";
   display: inline-block;
   width: 14px;
@@ -1519,7 +1519,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-#pageLineup .btn-cancel:hover {
+#pageLineup .btn-clear:hover {
   opacity: 0.8;
 }
 #pageLineup .product-list {
