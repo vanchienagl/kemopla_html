@@ -2654,7 +2654,7 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   gap: 20px;
-  padding: 43px 0;
+  padding: 44px 0;
   border-top: 1px solid rgba(64, 33, 15, 0.5019607843);
 }
 #pageCompany .company-info .row:first-child {
@@ -2665,7 +2665,7 @@ body {
   padding-bottom: 0;
 }
 #pageCompany .company-info .title {
-  max-width: 260px;
+  max-width: 267px;
   width: 100%;
   font-weight: 500;
   font-size: 16px;
