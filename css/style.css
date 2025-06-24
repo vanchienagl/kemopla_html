@@ -77,6 +77,17 @@ header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, 
   display: none;
 }
 
+.note {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: inherit;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -344,13 +355,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 12px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 .c-section-heading h2 {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -365,8 +377,9 @@ body {
   background: linear-gradient(90deg, rgb(244, 164, 102) 0%, rgb(255, 182, 0) 50%, rgb(254, 206, 98) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 }
+
 .c-section-heading span {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -376,13 +389,44 @@ body {
   line-height: 1;
   color: #825A12;
 }
+
 .c-section-heading--2 h2 {
   background: -webkit-gradient(linear, left top, right top, from(rgb(101, 58, 24)), color-stop(50%, rgb(146, 67, 0)), to(rgb(255, 155, 31)));
   background: linear-gradient(90deg, rgb(101, 58, 24) 0%, rgb(146, 67, 0) 50%, rgb(255, 155, 31) 100%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
 }
 
+.c-section-heading--small {
+  padding: 32px;
+}
+
+.c-section-heading--small h2 {
+  margin-bottom: unset;
+  font-size: 9rem;
+}
+
+.c-section-heading--small span {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-section-heading h2 {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .c-section-heading {
+    padding: 31px 20px;
+    gap: 10px;
+  }
+  .c-section-heading h2 {
+    font-size: 5rem;
+  }
+  .c-section-heading span {
+    font-size: 1.3rem;
+  }
+}
 /*====================================
 .c-arrowBtn
 ======================================*/
@@ -2644,7 +2688,16 @@ body {
 #pageCompany
 ======================================*/
 #pageCompany .heading {
-  margin-bottom: 110px;
+  margin-bottom: 106px;
+}
+#pageCompany .heading h2 {
+  font-size: 90px;
+}
+#pageCompany .heading span {
+  font-size: 20px;
+}
+#pageCompany .inner {
+  padding-bottom: 60px;
 }
 #pageCompany .company-info .row {
   display: -webkit-box;
@@ -2684,11 +2737,29 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageCompany .heading h2 {
+    font-size: 70px;
+  }
+  #pageCompany .inner {
+    padding-bottom: 40px;
+  }
   #pageCompany .company-info .title {
     max-width: 200px;
   }
 }
 @media screen and (max-width: 767px) {
+  #pageCompany .heading {
+    margin-bottom: 53px;
+  }
+  #pageCompany .heading h2 {
+    font-size: 50px;
+  }
+  #pageCompany .heading span {
+    font-size: 13px;
+  }
+  #pageCompany .inner {
+    padding-bottom: 30px;
+  }
   #pageCompany .company-info .row {
     gap: 10px;
     padding: 25px 0;
@@ -2703,5 +2774,254 @@ body {
   }
   #pageCompany .company-info .data {
     font-size: 13px;
+  }
+}
+/*====================================
+#pageContact
+======================================*/
+#pageContact .heading {
+  margin-bottom: 106px;
+}
+#pageContact .heading h2 {
+  font-size: 90px;
+}
+#pageContact .heading span {
+  font-size: 20px;
+}
+#pageContact .inner {
+  padding: 0 100px;
+}
+#pageContact .notice {
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
+  margin-bottom: 50px;
+}
+#pageContact .notice-link {
+  color: #FF9435;
+  text-decoration: underline;
+}
+#pageContact .notice-link:hover {
+  text-decoration: none;
+}
+#pageContact .form-contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 20px;
+}
+#pageContact .form-contact .row-wrap:not(:first-of-type) {
+  margin-top: 25px;
+}
+#pageContact .form-contact .row-wrap:last-of-type {
+  margin-top: 100px;
+}
+#pageContact .form-contact .row-wrap.has-error .label {
+  color: #b94a48;
+}
+#pageContact .form-contact .row-email .field {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+#pageContact .form-contact .title {
+  max-width: 270px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 10px;
+}
+#pageContact .form-contact .label {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+#pageContact .form-contact .required {
+  font-size: 12px;
+  line-height: 1;
+  background: #eb3a82;
+  color: #fff;
+  padding: 2px 10px 3px;
+}
+#pageContact .form-contact .field {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+#pageContact .form-contact input {
+  max-width: 300px;
+  width: 100%;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+#pageContact .form-contact input:focus {
+  outline: none;
+}
+#pageContact .form-contact input.is-full {
+  max-width: none;
+}
+#pageContact .form-contact select {
+  border: none;
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+}
+#pageContact .form-contact select:focus {
+  outline: none;
+}
+#pageContact .form-contact textarea {
+  border: none;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+}
+#pageContact .form-contact textarea:focus {
+  outline: none;
+}
+#pageContact .form-contact .note {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+#pageContact .form-contact .error-message {
+  display: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #b94a48;
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+}
+#pageContact .form-contact .error-message span {
+  font-size: 14px;
+  color: #b94a48;
+  font-weight: 700;
+}
+#pageContact .form-contact .error-message.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+#pageContact .form-contact .btn-submit {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageContact .heading h2 {
+    font-size: 70px;
+  }
+  #pageContact .inner {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #pageContact .heading {
+    margin-bottom: 53px;
+  }
+  #pageContact .heading h2 {
+    font-size: 50px;
+  }
+  #pageContact .heading span {
+    font-size: 13px;
+  }
+  #pageContact .inner {
+    padding: 0;
+  }
+  #pageContact .notice {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  #pageContact .notice-link {
+    font-size: 14px;
+  }
+  #pageContact .form-contact .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  #pageContact .form-contact .row-wrap:last-of-type {
+    margin-top: 50px;
+  }
+  #pageContact .form-contact .row-email .field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #pageContact .form-contact .title {
+    max-width: none;
+    gap: 10px;
+    padding-top: 0;
+  }
+  #pageContact .form-contact .label {
+    font-size: 14px;
+  }
+  #pageContact .form-contact .field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #pageContact .form-contact input {
+    max-width: none;
+    font-size: 14px;
+  }
+  #pageContact .form-contact select {
+    font-size: 14px;
+  }
+  #pageContact .form-contact textarea {
+    font-size: 14px;
+  }
+  #pageContact .form-contact .note {
+    font-size: 14px;
+  }
+  #pageContact .form-contact .error-message {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  #pageContact .form-contact .error-message span {
+    font-size: 13px;
+  }
+  #pageContact .form-contact .btn-submit {
+    width: 250px;
   }
 }

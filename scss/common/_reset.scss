@@ -67,6 +67,16 @@ header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, 
     display: none;
   }
 }
+.note {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: inherit;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;

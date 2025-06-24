@@ -1,0 +1,236 @@
+/*====================================
+#pageContact
+======================================*/
+#pageContact {
+  .heading {
+    margin-bottom: 106px;
+    h2 {
+      font-size: 90px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+  .inner {
+    padding: 0 100px;
+  }
+  .notice  {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+    margin-bottom: 50px;
+    &-link {
+      color: #FF9435;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .form-contact {
+    .row {
+      &-wrap {
+        &:not(:first-of-type) {
+          margin-top: 25px;
+        }
+        &:last-of-type {
+          margin-top: 100px;
+        }
+        &.has-error {
+          .label {
+            color: #b94a48;
+          }
+        }
+      }
+      &-email {
+        .field {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+      }
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+    }
+    .title {
+      max-width: 270px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      align-self: flex-start;
+      padding-top: 10px;
+    }
+    .label {
+      font-size: 16px;
+      letter-spacing: 0.05em;
+    }
+    .required {
+      font-size: 12px;
+      line-height: 1;
+      background: #eb3a82;
+      color: #fff;
+      padding: 2px 10px 3px;
+    }
+    .field {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    input {
+      &:focus {
+        outline: none;
+      }
+      &.is-full {
+        max-width: none;
+      }
+      max-width: 300px;
+      width: 100%;
+      border: none;
+      background-color: #f2f2f2;
+      padding: 8px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    select {
+      &:focus {
+        outline: none;
+      }
+      border: none;
+      background-color: #f2f2f2;
+      width: 100%;
+      padding: 7px;
+      font-size: 16px;
+    }
+    textarea {
+      &:focus {
+        outline: none;
+      }
+      border: none;
+      background-color: #f2f2f2;
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .note {
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      line-height: 1;
+    }
+    .error-message {
+      display: none;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      color: #b94a48;
+      line-height: 1.5;
+      margin: 10px 0 0 0;
+      span {
+        font-size: 14px;
+        color: #b94a48;
+        font-weight: 700;
+      }
+      &.show {
+        display: flex !important;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+    .btn-submit {
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  }
+}
+
+// TB
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageContact {
+    .heading {
+      h2 {
+        font-size: 70px;
+      }
+    }
+    .inner {
+      padding: 0;
+    }
+  }
+}
+
+// SP
+@media screen and (max-width: 767px) {
+  #pageContact {
+    .heading {
+      margin-bottom: 53px;
+      h2 {
+        font-size: 50px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+    .inner {
+      padding: 0;
+    }
+    .notice  {
+      font-size: 14px;
+      margin-bottom: 40px;
+      &-link {
+        font-size: 14px;
+      }
+    }
+    .form-contact {
+      .row {
+        &-wrap {
+          &:last-of-type {
+            margin-top: 50px;
+          }
+        }
+        &-email {
+          .field {
+            flex-direction: column;
+            align-items: flex-end;
+          }
+        }
+        flex-direction: column;
+        gap: 10px;
+      }
+      .title {
+        max-width: none;
+        gap: 10px;
+        padding-top: 0;
+      }
+      .label {
+        font-size: 14px;
+      }
+      .field {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      input {
+        max-width: none;
+        font-size: 14px;
+      }
+      select {
+        font-size: 14px;
+      }
+      textarea {
+        font-size: 14px;
+      }
+      .note {
+        font-size: 14px;
+      }
+      .error-message {
+        font-size: 13px;
+        margin-top: 5px;
+        span {
+          font-size: 13px;
+        }
+      }
+      .btn-submit {
+        width: 250px;
+      }
+    }
+  }
+}

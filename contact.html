@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Rationale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/standalone.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  
+  <body id="pageContact">
+    <header class="header">Header</header>
+
+    <main>
+      <div class="c-section-heading heading">
+        <h2>Contact</h2>
+        <span>お問い合わせ</span>
+      </div>
+      <div class="c-container-02">
+        <div class="inner">
+          <p class="notice">お問い合わせいただく前に、まずは <a href="#" class="notice-link">ご利用ガイド</a>をご確認ください。<br>お返事までにお時間がかかる場合がございます。予めご了承ください。</p>
+          <form action="#" id="form_contact" class="form-contact">
+            <div class="row-wrap">
+              <div class="row">
+                <div class="title">
+                  <label class="label" for="type_inquiry">お問い合わせの種類</label>
+                  <span class="required">必須</span>
+                </div>
+                <div class="field">
+                  <select class="type-inquiry" id="type_inquiry" name="type_inquiry">
+                    <option label="" value="">- 選択 -</option>
+                    <option value="11">商品について</option>
+                    <option value="12">注文内容について</option>
+                    <option value="53">配送について</option>
+                    <option value="54">ログインについて</option>
+                    <option value="55">不良品交換について</option>
+                    <option value="56">会員登録情報について</option>
+                    <option value="57">その他</option>
+                  </select>
+                </div>
+              </div>
+              <div class="error-message"></div>
+            </div>
+            <div class="row-wrap">
+              <div class="row">
+                <div class="title">
+                  <label class="label" for="order_number">ご注文番号</label>
+                </div>
+                <div class="field">
+                  <input type="text" class="order-number" id="order_number" name="order_number" value="">
+                  <span class="note">※半角英数</span>
+                </div>
+              </div>
+              <div class="error-message"></div>
+            </div>
+            <div class="row-wrap">
+              <div class="row">
+                <div class="title">
+                  <label class="label" for="full_name">氏名</label>
+                  <span class="required">必須</span>
+                </div>
+                <div class="field">
+                  <input type="text" class="full-name is-full" id="full_name" name="full_name" value="">
+                </div>
+              </div>
+              <div class="error-message"></div>
+            </div>
+            <div class="row-wrap">
+              <div class="row">
+                <div class="title">
+                  <label class="label" for="furigana">氏名（ふりがな）</label>
+                </div>
+                <div class="field">
+                  <input type="text" class="furigana is-full" id="furigana" name="furigana" value="">
+                </div>
+              </div>
+            </div>
+            <div class="row-wrap">
+              <div class="row">
+                <div class="title">
+                  <label class="label" for="telephone">電話番号</label>
+                </div>
+                <div class="field">
+                  <input type="text" class="telephone" id="telephone" name="telephone" value="">
+                  <span class="note">※半角英数</span>
+                </div>
+              </div>
+            </div>
+            <div class="row-wrap">
+              <div class="row row-email">
+                <div class="title">
+                  <label class="label" for="email">メールアドレス</label>
+                  <span class="required">必須</span>
+                </div>
+                <div class="field">
+                  <input type="text" class="email is-full" id="email" name="email" value="">
+                  <span class="note">※半角英数</span>
+                </div>
+              </div>
+              <div class="error-message"></div>
+            </div>
+            <div class="row-wrap">
+              <div class="row">
+                <div class="title">
+                  <label class="label" for="email_confirm">再入力（確認）</label>
+                  <span class="required">必須</span>
+                </div>
+                <div class="field">
+                  <input type="text" class="email-confirm is-full" id="email_confirm" name="email_confirm" value="">
+                </div>
+              </div>
+              <div class="error-message"></div>
+            </div>
+            <div class="row-wrap">
+              <div class="row">
+                <div class="title">
+                  <label class="label" for="inquiry_content">お問い合わせ内容</label>
+                  <span class="required">必須</span>
+                </div>
+                <div class="field">
+                  <textarea class="inquiry-content" id="inquiry_content" name="inquiry_content"></textarea>
+                </div>
+              </div>
+              <div class="error-message"></div>
+            </div>
+            <div class="row-wrap">
+              <div class="row">
+                <button class="js_btn_submit c-arrowBtn-02 btn-submit" type="submit" name="btn_submit">送信</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <ul class="list-sns">
+          <li class="item">
+            <img loading="lazy" src="./image/common/txt_follow_us.svg" alt="follow us">
+          </li>
+          <li class="item">
+            <a href="#">
+              <img loading="lazy" src="./image/common/icon_x.svg" alt="twitter">
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img loading="lazy" src="./image/common/icon_youtube.svg" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div class="c-container">
+          <div class="inner">
+            <div class="logo">
+              <a href="#">
+                <img loading="lazy" src="./image/common/logo.png" alt="aoshima">
+              </a>
+            </div>
+            <div class="info">
+              <a href="#" class="btn-email">
+                <span class="icon"><img loading="lazy" src="./image/common/icon_email.svg" alt="mail"></span>
+                <span class="text">メルマガ購読</span>
+              </a>
+              <div class="menus">
+                <ul class="menu menu-01">
+                  <li class="item">
+                    <a href="#">けもプラについて</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">お知らせ</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">うちの子シミュレーター</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">商品一覧</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">公式キャラクター</a>
+                  </li>
+                </ul>
+                <ul class="menu menu-02">
+                  <li class="item">
+                    <a href="#">ご利用ガイド</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">会社概要</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">ライセンス</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">特定商取引法に基づく表示</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">プライバシーポリシー</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">利用規約</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">お問い合わせ</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="copy-right">Copyright© AOSHIMA BUNKA KYOZAI <br class="sp">Co,.Ltd.All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js_page_to_top page-to-top">
+        <img loading="lazy" src="./image/common/img_page_to_top.png" alt="page to top">
+      </div>
+    </footer>
+
+    <div class="c-follow-us">
+      <div class="item">
+        <img loading="lazy" src="./image/common/txt_follow_us_2.svg" alt="follow us">
+      </div>
+      <div class="item">
+        <a href="#" class="link">
+          <img loading="lazy" src="./image/common/icon_x.svg" alt="twitter">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#" class="link">
+          <img loading="lazy" src="./image/common/icon_youtube.svg" alt="youtube">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

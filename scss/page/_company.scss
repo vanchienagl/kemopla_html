@@ -3,7 +3,16 @@
 ======================================*/
 #pageCompany {
   .heading {
-    margin-bottom: 110px;
+    margin-bottom: 106px;
+    h2 {
+      font-size: 90px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+  .inner {
+    padding-bottom: 60px;
   }
   .company-info {
     .row {
@@ -42,6 +51,14 @@
 // TB
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #pageCompany {
+    .heading {
+      h2 {
+        font-size: 70px;
+      }
+    }
+    .inner {
+      padding-bottom: 40px;
+    }
     .company-info {
       .title {
         max-width: 200px;
@@ -53,6 +70,18 @@
 // SP
 @media screen and (max-width: 767px) {
   #pageCompany {
+    .heading {
+      margin-bottom: 53px;
+      h2 {
+        font-size: 50px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+    .inner {
+      padding-bottom: 30px;
+    }
     .company-info {
       .row {
         gap: 10px;

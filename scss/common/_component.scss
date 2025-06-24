@@ -145,34 +145,76 @@
 ======================================*/
 .c-section-heading {
   padding: 42px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
-  align-items: center;
-  h2 {
-    width: max-content;
-    font-family: 'Rationale', sans-serif;
-    font-size: 10rem;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0;
-    text-align: center;
-    background: linear-gradient(90deg, rgba(244, 164, 102, 1) 0%, rgba(255, 182, 0, 1) 50%, rgba(254, 206, 98, 1) 100%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.c-section-heading h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Rationale", sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(244, 164, 102)), color-stop(50%, rgb(255, 182, 0)), to(rgb(254, 206, 98)));
+  background: linear-gradient(90deg, rgb(244, 164, 102) 0%, rgb(255, 182, 0) 50%, rgb(254, 206, 98) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.c-section-heading span {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: #825A12;
+}
+.c-section-heading--2 h2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(101, 58, 24)), color-stop(50%, rgb(146, 67, 0)), to(rgb(255, 155, 31)));
+  background: linear-gradient(90deg, rgb(101, 58, 24) 0%, rgb(146, 67, 0) 50%, rgb(255, 155, 31) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.c-section-heading--small {
+  padding: 32px;
+}
+.c-section-heading--small h2 {
+  margin-bottom: unset;
+  font-size: 9rem;
+}
+.c-section-heading--small span {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-section-heading h2 {
+    font-size: 7rem;
   }
-  span {
-    width: max-content;
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    color: #825A12;
+}
+
+@media screen and (max-width: 767px) {
+  .c-section-heading {
+    padding: 31px 20px;
+    gap: 10px;
   }
-  &--2 {
-    h2 {
-      background: linear-gradient(90deg, rgba(101, 58, 24, 1) 0%, rgba(146, 67, 0, 1) 50%, rgba(255, 155, 31, 1) 100%);
-      background-clip: text;
-    }
+  .c-section-heading h2 {
+    font-size: 5rem;
+  }
+  .c-section-heading span {
+    font-size: 1.3rem;
   }
 }
 
