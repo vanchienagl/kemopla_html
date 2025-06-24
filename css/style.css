@@ -26,6 +26,7 @@ html {
 body {
   text-rendering: optimizeSpeed;
   -webkit-text-size-adjust: 100%;
+  overflow-x: unset;
 }
 
 header, footer, main, section, div, article, aside, figure, figcaption, h1, h2, h3, h4, h5, h6, p, span, strong, em, small, mark, ul, ol, li, table, thead, tbody, tfoot, tr, th, td, dl, dt, dd, a, label, button, textarea, select, input, input[type=radio], input[type=checkbox], img, picture, video, canvas, svg {

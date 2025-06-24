@@ -102,7 +102,7 @@ $(function () {
 
       if (scrollTarget) {
         // Use this way will get correct offsetTop
-        const offsetTop = scrollTarget.offsetTop;
+        const offsetTop = $(scrollTarget).offset().top;
         $('html, body').stop().animate({
           scrollTop: offsetTop - 30,
           behavior: 'smooth'
