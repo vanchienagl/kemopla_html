@@ -947,7 +947,13 @@ body {
           font-feature-settings: "palt";
 }
 #pageNews .heading {
-  padding-bottom: 106px;
+  margin-bottom: 50px;
+}
+#pageNews .heading h2 {
+  font-size: 90px;
+}
+#pageNews .heading span {
+  font-size: 20px;
 }
 #pageNews .inner {
   width: 100%;
@@ -1095,8 +1101,8 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  #pageNews .heading {
-    padding-bottom: 70px;
+  #pageNews .heading h2 {
+    font-size: 70px;
   }
   #pageNews .inner {
     gap: 30px;
@@ -1122,6 +1128,15 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  #pageNews .heading {
+    margin-bottom: 25px;
+  }
+  #pageNews .heading h2 {
+    font-size: 50px;
+  }
+  #pageNews .heading span {
+    font-size: 13px;
+  }
   #pageNews .inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1346,6 +1361,15 @@ body {
 /*====================================
 #pageLineup
 ======================================*/
+#pageLineup .heading {
+  margin-bottom: 60px;
+}
+#pageLineup .heading h2 {
+  font-size: 90px;
+}
+#pageLineup .heading span {
+  font-size: 20px;
+}
 #pageLineup .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1724,6 +1748,9 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageLineup .heading h2 {
+    font-size: 70px;
+  }
   #pageLineup .inner {
     gap: 30px;
   }
@@ -1746,6 +1773,15 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  #pageLineup .heading {
+    margin-bottom: 30px;
+  }
+  #pageLineup .heading h2 {
+    font-size: 50px;
+  }
+  #pageLineup .heading span {
+    font-size: 13px;
+  }
   #pageLineup .inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2195,6 +2231,15 @@ body {
 /*====================================
 #pageCharacter
 ======================================*/
+#pageCharacter .heading {
+  margin-bottom: 40px;
+}
+#pageCharacter .heading h2 {
+  font-size: 90px;
+}
+#pageCharacter .heading span {
+  font-size: 20px;
+}
 #pageCharacter .character .container {
   max-width: 800px;
   width: 100%;
@@ -2573,6 +2618,9 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageCharacter .heading h2 {
+    font-size: 70px;
+  }
   #pageCharacter .tab-content {
     border-radius: 80px;
   }
@@ -2601,6 +2649,15 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  #pageCharacter .heading {
+    margin-bottom: 20px;
+  }
+  #pageCharacter .heading h2 {
+    font-size: 50px;
+  }
+  #pageCharacter .heading span {
+    font-size: 13px;
+  }
   #pageCharacter .character .inner {
     padding-top: 100px;
     padding-bottom: 65px;

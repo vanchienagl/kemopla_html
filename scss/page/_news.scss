@@ -4,7 +4,13 @@
 #pageNews {
   font-feature-settings: "palt";
   .heading {
-    padding-bottom: 106px;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 90px;
+    }
+    span {
+      font-size: 20px;
+    }
   }
   .inner {
     width: 100%;
@@ -146,7 +152,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #pageNews {
     .heading {
-      padding-bottom: 70px;
+      h2 {
+        font-size: 70px;
+      }
     }
     .inner {
       gap: 30px;
@@ -180,6 +188,15 @@
 // SP
 @media screen and (max-width: 767px) {
   #pageNews {
+    .heading {
+      margin-bottom: 25px;
+      h2 {
+        font-size: 50px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
     .inner {
       flex-direction: column;
     }

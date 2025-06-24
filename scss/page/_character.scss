@@ -2,6 +2,15 @@
 #pageCharacter
 ======================================*/
 #pageCharacter {
+  .heading {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 90px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
   .character {
     .container {
       max-width: 800px;
@@ -335,6 +344,11 @@
 // TB
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #pageCharacter {
+    .heading {
+      h2 {
+        font-size: 70px;
+      }
+    }
     .tab-content {
       border-radius: 80px;
     }
@@ -367,6 +381,15 @@
 // SP
 @media screen and (max-width: 767px) {
   #pageCharacter {
+    .heading {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 50px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
     .character {
       .inner {
         padding-top: 100px;
