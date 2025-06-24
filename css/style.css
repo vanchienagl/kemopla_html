@@ -2944,6 +2944,9 @@ body {
   #pageContact .inner {
     padding: 0;
   }
+  #pageContact .form-contact .title {
+    max-width: 220px;
+  }
 }
 @media screen and (max-width: 767px) {
   #pageContact .heading {

@@ -84,12 +84,31 @@ $(function () {
       isValid = false;
     }
 
-    // --- Scroll to form if there is an error ---
+    // --- Scroll to the position if there is an error ---
     if (!isValid) {
-      const formTop = document.getElementById('form_contact').getBoundingClientRect().top + window.scrollY;
-      $('html, body').stop().animate({
-        scrollTop: formTop
-      }, 600);
+      const $errorRows = $('.row-wrap.has-error');
+
+      const allRequiredEmpty = requiredFields.every(function (fieldName) {
+        const $field = $('[name="' + fieldName + '"]');
+        return !$field.val().trim();
+      }) && !$select.val();
+
+      let scrollTarget;
+      if (allRequiredEmpty) {
+        scrollTarget = document.getElementById('form_contact');
+      } else if ($errorRows.length >= 1) {
+        scrollTarget = $errorRows.first().get(0);
+      }
+
+      if (scrollTarget) {
+        // Use this way will get correct offsetTop
+        const offsetTop = scrollTarget.offsetTop;
+        $('html, body').stop().animate({
+          scrollTop: offsetTop - 10,
+          behavior: 'smooth'
+        }, 600);
+      }
+
       return;
     }
 
