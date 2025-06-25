@@ -334,11 +334,11 @@
         color: #40210F;
         border: 1px solid #40210F;
         border-radius: 49px;
+        &:hover {
+          opacity: 0.8;
+        }
+        transition: all 0.3s;
       }
-      &:hover {
-        opacity: 0.8;
-      }
-      transition: all 0.3s;
     }
   }
 }

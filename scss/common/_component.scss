@@ -290,10 +290,21 @@
   background-color: #fff;
   color: #40210F;
   border: 1px solid #40210F;
+  box-sizing: border-box;
   border-radius: 49px;
-  transition: all 0.3s ease;
+  transition: all 0.3s;
   &:hover {
-    opacity: 0.8;
+    border: 1px solid transparent;
+    background-image: linear-gradient( to right, #653A18, #924300, #FF9B1F);
+    background-clip: padding-box;
+    color: #FFFFFF;
+    &::before,
+    &::after {
+      border-color: #FFFFFF;
+    }
+    &::after {
+      right: 15px;
+    }
   }
   &::before {
     position: absolute;
@@ -305,6 +316,7 @@
     content: '';
     border: 1px solid #40210F;
     border-radius: 50%;
+    transition: all 0.3s;
   }
   &::after {
     position: absolute;
@@ -316,6 +328,7 @@
     content: '';
     border-bottom: 1px solid #40210F;
     border-right: 1px solid #40210F;
+    transition: all 0.3s;
   }
 }
 
