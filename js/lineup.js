@@ -17,5 +17,11 @@ $(function () {
     form.querySelectorAll('input[type="checkbox"]').forEach(el => {
       el.checked = false;
     });
+
+    // Scroll to Form
+    $('html, body').animate({
+      scrollTop: $('.js_form_filter').offset().top - 30,
+      behavior: 'smooth'
+    }, 200);
   });
 });
