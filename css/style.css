@@ -608,11 +608,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 18px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .c-arrowBtn-03:hover {
-  opacity: 0.8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#653A18), color-stop(#924300), to(#FF9B1F));
+  background-image: linear-gradient(to right, #653A18, #924300, #FF9B1F);
+  background-clip: padding-box;
 }
 .c-arrowBtn-03 .icon {
   width: 19px;
