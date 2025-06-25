@@ -112,6 +112,10 @@ table {
   border-spacing: 0;
 }
 
+input[type=text], input[type=password], input[type=tel], input[type=number], select {
+  height: auto;
+}
+
 /* ===================================
 Font Family
 ======================================*/
@@ -2943,6 +2947,7 @@ body {
 #pageContact .form-contact input {
   max-width: 300px;
   width: 100%;
+  height: auto;
   border: none;
   background-color: #f2f2f2;
   padding: 8px;
@@ -2960,6 +2965,7 @@ body {
   border: none;
   background-color: #f2f2f2;
   width: 100%;
+  height: auto;
   padding: 7px;
   font-size: 16px;
 }

@@ -97,3 +97,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+input[type="text"], input[type="password"], input[type="tel"], input[type="number"], select {
+  height: auto;
+}
