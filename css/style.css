@@ -3420,3 +3420,163 @@ header.header {
     width: 250px;
   }
 }
+/*====================================
+#pageGuide
+======================================*/
+#pageGuide .main-nav {
+  margin-bottom: 117px;
+}
+#pageGuide .main-nav-list .item:not(:first-child) {
+  margin-top: 25px;
+}
+#pageGuide .main-nav-list .link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #42210B;
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-decoration: underline;
+}
+#pageGuide .main-nav-list .link:hover {
+  text-decoration: none;
+}
+#pageGuide .sec-content:not(:first-of-type) {
+  margin-top: 170px;
+}
+#pageGuide .sec-content .box-item:not(:first-of-type) {
+  margin-top: 80px;
+}
+#pageGuide .com-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #FF9B1F;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  border-bottom: 1px solid rgba(64, 33, 15, 0.3137254902);
+  padding-bottom: 28px;
+  margin-bottom: 65px;
+}
+#pageGuide .com-sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #40210F;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+#pageGuide .com-sub-title::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 21px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F4A466), color-stop(50%, #FFB600), to(#FECE62));
+  background-image: linear-gradient(to right, #F4A466 0%, #FFB600 50%, #FECE62 100%);
+}
+#pageGuide .sec-orders .list-step .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 21px;
+}
+#pageGuide .sec-orders .list-step .item:not(:first-child) {
+  margin-top: 31px;
+}
+#pageGuide .sec-orders .list-step .step {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.1;
+  background-color: #40210F;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 3px;
+}
+#pageGuide .sec-orders .list-step .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 16px;
+  font-weight: 400;
+  color: #40210F;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
+}
+#pageGuide .sec-orders .list-step .light {
+  color: #FF9B1F;
+}
+#pageGuide .sec-orders .description .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #40210F;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
+}
+#pageGuide .sec-orders .description .text:not(:first-of-type) {
+  margin-top: 45px;
+}
+#pageGuide .sec-payment .tit {
+  font-size: 16px;
+  font-weight: 500;
+  color: #40210F;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+#pageGuide .sec-payment .tit-01 {
+  margin-bottom: 35px;
+}
+#pageGuide .sec-payment .tit-02 {
+  margin-bottom: 30px;
+}
+#pageGuide .sec-payment .txt {
+  font-size: 16px;
+  font-weight: 400;
+  color: #40210F;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+#pageGuide .sec-payment .txt-01 {
+  margin-bottom: 67px;
+}
+#pageGuide .sec-payment .txt-02 {
+  margin-bottom: 35px;
+}
+#pageGuide .sec-payment .txt-03 {
+  line-height: 1.875;
+  margin-bottom: 60px;
+}
+#pageGuide .sec-payment .txt-04 {
+  line-height: 1.875;
+}
+#pageGuide .sec-payment .img {
+  margin-bottom: 32px;
+}
+#pageGuide .sec-payment .box-amount.box-item {
+  margin-top: 60px;
+}
+#pageGuide .sec-payment .box-amount .txt {
+  line-height: 1.875;
+}
+#pageGuide .sec-payment .box-amount .txt:not(:first-of-type) {
+  margin-top: 22px;
+}
+#pageGuide .sec-payment .box-amount .txt-bold {
+  font-weight: 500;
+}
+#pageGuide .sec-payment .box-amount .txt-gray {
+  color: #808080;
+}
