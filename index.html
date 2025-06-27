@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kemopla Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Kemopla - Top Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Rationale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Rationale&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/standalone.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -15,15 +15,86 @@
     <header class="header">Header</header>
 
     <main>
-      <div class="c-section-heading heading">
-        <h2>Kemopla</h2>
-        <span>会社概要</span>
-      </div>
-      <div class="c-container-02">
-        <div class="inner">
-          <p>content here</p>
+      <div class="main-mv">
+        <div class="container">
+          <div class="img img-01">
+            <img loading="lazy" src="./image/top/img_mv_01.png" alt="image 01">
+          </div>
+          <div class="img img-02">
+            <img loading="lazy" src="./image/top/img_mv_02.png" alt="image 02">
+          </div>
+          <div class="copy-text">
+            <div class="inner">
+              <p class="year">
+                <span class="f-rati num">2025</span>
+                <span class="f-inter txt">年</span>
+              </p>
+              <p class="text">発売予定</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-img">
+          <img loading="lazy" src="./image/top/img_mv_main.png" alt="main image">
+        </div>
+        <div class="img img-03">
+          <img loading="lazy" src="./image/top/img_mv_03.png" alt="image 03">
+        </div>
+        <div class="img img-04">
+          <img loading="lazy" src="./image/top/img_mv_04.png" alt="image 04">
         </div>
       </div>
+      
+      <section class="sec-news">
+        <div class="c-container-02 container">
+          <div class="bg">
+            <img loading="lazy" src="./image/top/bg_news_01.png" alt="bg 01">
+          </div>
+          <div class="heading">
+            <h2 class="f-rati head">News</h2>
+            <a href="#" class="f-mont c-arrowBtn-02 btn-more">News ALL</a>
+          </div>
+          <div class="list-news">
+            <a href="#" class="item">
+              <span class="f-mont date">2025.01.01</span>
+              <span class="f-mont label">News</span>
+              <p class="title">こちらにテキストが入ります。こちらにテキストが入ります。こちらにテキストが入ります。こちらにテキストが入ります。</p>
+              <span class="arrow"></span>
+            </a>
+            <a href="#" class="item">
+              <span class="f-mont date">2025.01.01</span>
+              <span class="f-mont label">News</span>
+              <p class="title">こちらにテキストが入ります。こちらにテキストが入ります。</p>
+              <span class="arrow"></span>
+            </a>
+            <a href="#" class="item">
+              <span class="f-mont date">2025.01.01</span>
+              <span class="f-mont label">News</span>
+              <p class="title">こちらにテキストが入ります。こちらにテキストが入ります。</p>
+              <span class="arrow"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-kemono">
+        <div class="container">
+          <div class="heading">
+            <h2 class="f-rati head">KEMOPLA</h2>
+            <p class="f-rati small"><span class="line">KEMO</span>no+<span class="line">PLA</span>model</p>
+          </div>
+          <div class="img-01">
+            <img loading="lazy" src="./image/top/img_kemono_01.png" alt="image 01">
+          </div>
+          <div class="img-02">
+            <img loading="lazy" src="./image/top/img_kemono_02.png" alt="image 02">
+          </div>
+          <div class="content">
+            <h3 class="f-rati title">選んでつくれる!可愛いケモノたちの可動プラモデル</h3>
+            <p class="description">けもプラは、自分好みのケモノを作れるカスタマイズプラモデルシリーズです。最大の魅力は、ケモノとヒトのバランスを調整できる「ケモ度」の設定。同じケモノでも、獣らしさが強い子から、人間の特徴が残る子まで、「低・中・高」の3段階から選択できます。お気に入りのパーツを組み合わせて、あなただけのケモノを作ってみませんか。</p>
+            <a href="#" class="f-mont c-arrowBtn-02 btn-more">About “KEMOPLA”</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -127,7 +198,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/common.js"></script>
-
-    <script></script>
   </body>
 </html>
