@@ -339,6 +339,10 @@
           &:not(:first-of-type) {
             margin-top: 12px;
           }
+          &-bold,
+          &-gray {
+            font-size: 14px;
+          }
         }
       }
     }

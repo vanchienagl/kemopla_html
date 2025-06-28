@@ -3717,6 +3717,9 @@ header.header {
   #pageGuide .sec-payment .box-amount .txt:not(:first-of-type) {
     margin-top: 12px;
   }
+  #pageGuide .sec-payment .box-amount .txt-bold, #pageGuide .sec-payment .box-amount .txt-gray {
+    font-size: 14px;
+  }
   #pageGuide .sec-faq .list-faq .item:not(:first-of-type) {
     margin-top: 20px;
   }
