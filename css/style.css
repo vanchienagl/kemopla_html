@@ -3444,7 +3444,7 @@ header.header {
   margin-top: 170px;
 }
 #pageGuide .sec-content .box-item:not(:first-of-type) {
-  margin-top: 80px;
+  margin-top: 63px;
 }
 #pageGuide .com-title {
   font-size: 26px;
@@ -3479,6 +3479,32 @@ header.header {
   background-image: -webkit-gradient(linear, left top, right top, from(#F4A466), color-stop(50%, #FFB600), to(#FECE62));
   background-image: linear-gradient(to right, #F4A466 0%, #FFB600 50%, #FECE62 100%);
 }
+#pageGuide .com-tit {
+  font-size: 16px;
+  font-weight: 500;
+  color: #40210F;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+#pageGuide .com-txt {
+  font-size: 16px;
+  font-weight: 400;
+  color: #40210F;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
+}
+#pageGuide .com-txt:not(:first-of-type) {
+  margin-top: 38px;
+}
+#pageGuide .com-txt .light {
+  color: #FF9B1F;
+}
+#pageGuide .sec-orders .sub-title {
+  margin-bottom: 61px;
+}
+#pageGuide .sec-orders .box-bundling.box-item {
+  margin-top: 83px;
+}
 #pageGuide .sec-orders .list-step .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3510,44 +3536,18 @@ header.header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 16px;
-  font-weight: 400;
-  color: #40210F;
-  letter-spacing: 0.05em;
-  line-height: 1.875;
 }
 #pageGuide .sec-orders .list-step .light {
   color: #FF9B1F;
 }
-#pageGuide .sec-orders .description .text {
-  font-size: 16px;
-  font-weight: 400;
-  color: #40210F;
-  letter-spacing: 0.05em;
-  line-height: 1.875;
-}
 #pageGuide .sec-orders .description .text:not(:first-of-type) {
   margin-top: 45px;
-}
-#pageGuide .sec-payment .tit {
-  font-size: 16px;
-  font-weight: 500;
-  color: #40210F;
-  letter-spacing: 0.05em;
-  line-height: 1.1;
 }
 #pageGuide .sec-payment .tit-01 {
   margin-bottom: 35px;
 }
 #pageGuide .sec-payment .tit-02 {
   margin-bottom: 30px;
-}
-#pageGuide .sec-payment .txt {
-  font-size: 16px;
-  font-weight: 400;
-  color: #40210F;
-  letter-spacing: 0.05em;
-  line-height: 1.1;
 }
 #pageGuide .sec-payment .txt-01 {
   margin-bottom: 67px;
@@ -3556,20 +3556,10 @@ header.header {
   margin-bottom: 35px;
 }
 #pageGuide .sec-payment .txt-03 {
-  line-height: 1.875;
   margin-bottom: 60px;
 }
-#pageGuide .sec-payment .txt-04 {
-  line-height: 1.875;
-}
-#pageGuide .sec-payment .img {
+#pageGuide .sec-payment .img-cards {
   margin-bottom: 32px;
-}
-#pageGuide .sec-payment .box-amount.box-item {
-  margin-top: 60px;
-}
-#pageGuide .sec-payment .box-amount .txt {
-  line-height: 1.875;
 }
 #pageGuide .sec-payment .box-amount .txt:not(:first-of-type) {
   margin-top: 22px;
@@ -3579,4 +3569,180 @@ header.header {
 }
 #pageGuide .sec-payment .box-amount .txt-gray {
   color: #808080;
+}
+#pageGuide .sec-faq .list-faq .item {
+  border: 1px solid #D8D3D0;
+  border-radius: 10px;
+}
+#pageGuide .sec-faq .list-faq .item:not(:first-of-type) {
+  margin-top: 30px;
+}
+#pageGuide .sec-faq .list-faq .item.active .question::after {
+  top: calc(50% + 5px);
+  -webkit-transform: translateY(-50%) rotate(225deg);
+          transform: translateY(-50%) rotate(225deg);
+}
+#pageGuide .sec-faq .list-faq .head {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  color: #FF9B1F;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+#pageGuide .sec-faq .list-faq .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 12px;
+  padding: 27px 53px 27px 50px;
+  position: relative;
+  cursor: pointer;
+}
+#pageGuide .sec-faq .list-faq .question .txt {
+  font-size: 18px;
+  line-height: 1.5;
+}
+#pageGuide .sec-faq .list-faq .question::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-style: solid;
+  border-color: #D8D3D0;
+  border-width: 0 2px 2px 0;
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 30px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#pageGuide .sec-faq .list-faq .answer {
+  margin-top: 13px;
+  padding: 0 53px 27px 50px;
+  display: none;
+}
+#pageGuide .sec-faq .list-faq .answer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 12px;
+}
+#pageGuide .sec-faq .list-faq .answer .txt {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+@media screen and (max-width: 767px) {
+  #pageGuide .main-nav {
+    margin-bottom: 60px;
+  }
+  #pageGuide .main-nav-list .item:not(:first-child) {
+    margin-top: 12px;
+  }
+  #pageGuide .main-nav-list .link {
+    font-size: 16px;
+  }
+  #pageGuide .sec-content:not(:first-of-type) {
+    margin-top: 85px;
+  }
+  #pageGuide .sec-content .box-item:not(:first-of-type) {
+    margin-top: 30px;
+  }
+  #pageGuide .com-title {
+    font-size: 20px;
+    padding-bottom: 14px;
+    margin-bottom: 32px;
+  }
+  #pageGuide .com-sub-title {
+    font-size: 18px;
+    gap: 5px;
+    margin-bottom: 17px;
+  }
+  #pageGuide .com-txt {
+    font-size: 14px;
+  }
+  #pageGuide .com-txt:not(:first-of-type) {
+    margin-top: 20px;
+  }
+  #pageGuide .com-txt .light {
+    font-size: 14px;
+  }
+  #pageGuide .sec-orders .sub-title {
+    margin-bottom: 30px;
+  }
+  #pageGuide .sec-orders .box-bundling.box-item {
+    margin-top: 40px;
+  }
+  #pageGuide .sec-orders .list-step .item {
+    gap: 15px;
+  }
+  #pageGuide .sec-orders .list-step .item:not(:first-child) {
+    margin-top: 20px;
+  }
+  #pageGuide .sec-orders .list-step .step {
+    font-size: 14px;
+  }
+  #pageGuide .sec-orders .list-step .step .light {
+    font-size: 14px;
+  }
+  #pageGuide .sec-orders .description .text:not(:first-of-type) {
+    margin-top: 25px;
+  }
+  #pageGuide .sec-payment .tit-01 {
+    margin-bottom: 20px;
+  }
+  #pageGuide .sec-payment .tit-02 {
+    margin-bottom: 15px;
+  }
+  #pageGuide .sec-payment .txt-01 {
+    margin-bottom: 35px;
+  }
+  #pageGuide .sec-payment .txt-02 {
+    margin-bottom: 20px;
+  }
+  #pageGuide .sec-payment .txt-03 {
+    margin-bottom: 30px;
+  }
+  #pageGuide .sec-payment .img-cards {
+    margin-bottom: 20px;
+  }
+  #pageGuide .sec-payment .box-amount .txt:not(:first-of-type) {
+    margin-top: 12px;
+  }
+  #pageGuide .sec-faq .list-faq .item:not(:first-of-type) {
+    margin-top: 20px;
+  }
+  #pageGuide .sec-faq .list-faq .head {
+    font-size: 20px;
+  }
+  #pageGuide .sec-faq .list-faq .question {
+    gap: 10px;
+    padding: 17px 40px 17px 15px;
+  }
+  #pageGuide .sec-faq .list-faq .question .txt {
+    font-size: 16px;
+  }
+  #pageGuide .sec-faq .list-faq .question::after {
+    width: 12px;
+    height: 12px;
+    right: 20px;
+  }
+  #pageGuide .sec-faq .list-faq .answer {
+    margin-top: 10px;
+    padding: 0 15px 15px 17px;
+  }
+  #pageGuide .sec-faq .list-faq .answer-wrap {
+    gap: 10px;
+  }
+  #pageGuide .sec-faq .list-faq .answer .txt {
+    font-size: 14px;
+  }
 }
