@@ -1,0 +1,10 @@
+/// @param $min-font     - Font size nhỏ nhất (px)
+/// @param $max-font     - Font size lớn nhất (px)
+/// @param $min-vw       - Viewport nhỏ nhất (px), thường là 768
+/// @param $max-vw       - Viewport lớn nhất (px), thường là 1024
+@mixin fluid-font-tb($min-font, $max-font, $min-vw, $max-vw) {
+  $slope: ($max-font - $min-font) / ($max-vw - $min-vw) * 100;
+  $y-intercept: $min-font - ($slope * $min-vw / 100);
+
+  font-size: clamp(#{$min-font}px, #{$slope}vw + #{$y-intercept}px, #{$max-font}px);
+}
