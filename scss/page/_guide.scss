@@ -306,11 +306,11 @@
       }
     }
     .main-nav {
-      margin-bottom: 60px;
+      margin-bottom: 70px;
       &-list {
         .item {
           &:not(:first-child) {
-            margin-top: 12px;
+            margin-top: 20px;
           }
         }
         .link {
@@ -325,7 +325,7 @@
       }
       .box-item {
         &:not(:first-of-type) {
-          margin-top: 30px;
+          margin-top: 35px;
         }
       }
     }
@@ -338,7 +338,6 @@
 
     .com-sub-title {
       font-size: 18px;
-      gap: 5px;
       margin-bottom: 17px;
     }
 

@@ -3695,10 +3695,10 @@ header.header {
     font-size: 13px;
   }
   #pageGuide .main-nav {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
   #pageGuide .main-nav-list .item:not(:first-child) {
-    margin-top: 12px;
+    margin-top: 20px;
   }
   #pageGuide .main-nav-list .link {
     font-size: 16px;
@@ -3707,7 +3707,7 @@ header.header {
     margin-top: 85px;
   }
   #pageGuide .sec-content .box-item:not(:first-of-type) {
-    margin-top: 30px;
+    margin-top: 35px;
   }
   #pageGuide .com-title {
     font-size: 20px;
@@ -3716,7 +3716,6 @@ header.header {
   }
   #pageGuide .com-sub-title {
     font-size: 18px;
-    gap: 5px;
     margin-bottom: 17px;
   }
   #pageGuide .com-txt {
