@@ -2,8 +2,18 @@
 #pageGuide
 ======================================*/
 #pageGuide {
+  .heading {
+    margin-bottom: 97px;
+    h2 {
+      font-size: 90px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
+
   .main-nav {
-    margin-bottom: 117px;
+    margin: 0 0 117px 16px;
     &-list {
       .item {
         &:not(:first-child) {
@@ -24,16 +34,6 @@
     }
   }
 
-  .sec-content {
-    &:not(:first-of-type) {
-      margin-top: 170px;
-    }
-    .box-item {
-      &:not(:first-of-type) {
-        margin-top: 63px;
-      }
-    }
-  }
   .com-title {
     font-size: 26px;
     font-weight: 500;
@@ -44,6 +44,7 @@
     padding-bottom: 28px;
     margin-bottom: 65px;
   }
+
   .com-sub-title {
     font-size: 20px;
     font-weight: 500;
@@ -53,6 +54,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-left: 6px;
     margin-bottom: 34px;
     &::before {
       content: '';
@@ -62,6 +64,7 @@
       background-image: linear-gradient( to right, #F4A466 0%, #FFB600 50%, #FECE62 100%);
     }
   }
+
   .com-tit {
     font-size: 16px;
     font-weight: 500;
@@ -69,6 +72,7 @@
     letter-spacing: 0.05em;
     line-height: 1.5;
   }
+
   .com-txt {
     &:not(:first-of-type) {
       margin-top: 38px;
@@ -78,8 +82,20 @@
     color: #40210F;
     letter-spacing: 0.05em;
     line-height: calc(30/16);
+    margin-left: 6px;
     .light {
       color: #FF9B1F;
+    }
+  }
+
+  .sec-content {
+    &:not(:first-of-type) {
+      margin-top: 170px;
+    }
+    .box-item {
+      &:not(:first-of-type) {
+        margin-top: 69px;
+      }
     }
   }
 
@@ -94,13 +110,14 @@
       }
     }
     .list-step {
+      margin-left: 3px;
       .item {
         &:not(:first-child) {
           margin-top: 31px;
         }
         display: flex;
         align-items: stretch;
-        gap: 21px;
+        gap: 18px;
       }
       .step {
         font-size: 16px;
@@ -110,7 +127,7 @@
         background-color: #40210F;
         color: #fff;
         border-radius: 20px;
-        padding: 5px 15px;
+        padding: 7px 18px;
         align-self: flex-start;
         flex-shrink: 0;
         margin-top: 3px;
@@ -125,7 +142,7 @@
     .description {
       .text {
         &:not(:first-of-type) {
-          margin-top: 45px;
+          margin-top: 31px;
         }
       }
     }
@@ -133,25 +150,36 @@
 
   // .sec-payment
   .sec-payment {
+    .title {
+      margin-bottom: 71px;
+    }
     .tit-01 {
-      margin-bottom: 35px;
+      margin-bottom: 27px;
     }
     .tit-02 {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
     .txt-01 {
-      margin-bottom: 67px;
+      margin-bottom: 59px;
     }
     .txt-02 {
-      margin-bottom: 35px;
+      margin: 0 0 39px 0;
     }
     .txt-03 {
       margin-bottom: 60px;
+      margin-top: 0;
+    }
+    .txt-04 {
+      margin-top: 0;
     }
     .img-cards {
-      margin-bottom: 32px;
+      margin-bottom: 30px;
+      margin-left: 6px;
     }
     .box-amount {
+      &.box-item {
+        margin-top: 63px;
+      }
       .txt {
         &:not(:first-of-type) {
           margin-top: 22px;
@@ -166,8 +194,25 @@
     }
   }
 
+  // .sec-delivery-shipping
+  .sec-delivery-shipping {
+    &.sec-content {
+      margin-top: 185px;
+    }
+  }
+
+  // .sec-returns-exchanges
+  .sec-returns-exchanges {
+    &.sec-content {
+      margin-top: 185px;
+    }
+  }
+
   // .sec-faq
   .sec-faq {
+    .title {
+      margin-bottom: 60px;
+    }
     .list-faq {
       .item {
         &:not(:first-of-type) {
@@ -185,16 +230,19 @@
         border-radius: 10px;
       }
       .head {
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 700;
-        line-height: 1;
-        color: #FF9B1F;
+        line-height: 1.5;
+        color: transparent;
+        background-image: linear-gradient( to right, #F4A466 0%, #FFB600 50%, #FECE62 100%);
+        background-clip: text;
         align-self: flex-start;
+        margin-top: -7px;
       }
       .question {
         display: flex;
         align-items: stretch;
-        gap: 12px;
+        gap: 10px;
         padding: 27px 53px 27px 50px;
         position: relative;
         cursor: pointer;
@@ -222,7 +270,7 @@
         &-wrap {
           display: flex;
           align-items: stretch;
-          gap: 12px;
+          gap: 10px;
         }
         display: none;
         .txt {
@@ -234,9 +282,29 @@
   }
 }
 
+// TB
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #pageGuide {
+    .heading {
+      h2 {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
 // SP
 @media screen and (max-width: 767px) {
   #pageGuide {
+    .heading {
+      margin-bottom: 50px;
+      h2 {
+        font-size: 50px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
     .main-nav {
       margin-bottom: 60px;
       &-list {
@@ -261,16 +329,19 @@
         }
       }
     }
+
     .com-title {
       font-size: 20px;
       padding-bottom: 14px;
       margin-bottom: 32px;
     }
+
     .com-sub-title {
       font-size: 18px;
       gap: 5px;
       margin-bottom: 17px;
     }
+
     .com-txt {
       &:not(:first-of-type) {
         margin-top: 20px;
@@ -316,6 +387,9 @@
 
     // .sec-payment
     .sec-payment {
+      .title {
+        margin-bottom: 35px;
+      }
       .tit-01 {
         margin-bottom: 20px;
       }
@@ -335,6 +409,9 @@
         margin-bottom: 20px;
       }
       .box-amount {
+        &.box-item {
+          margin-top: 30px;
+        }
         .txt {
           &:not(:first-of-type) {
             margin-top: 12px;
@@ -347,8 +424,25 @@
       }
     }
 
+    // .sec-delivery-shipping
+    .sec-delivery-shipping {
+      &.sec-content {
+        margin-top: 90px;
+      }
+    }
+
+    // .sec-returns-exchanges
+    .sec-returns-exchanges {
+      &.sec-content {
+        margin-top: 90px;
+      }
+    }
+
     // .sec-faq
     .sec-faq {
+      .title {
+        margin-bottom: 30px;
+      }
       .list-faq {
         .item {
           &:not(:first-of-type) {
@@ -357,6 +451,7 @@
         }
         .head {
           font-size: 20px;
+          margin-top: -4px;
         }
         .question {
           gap: 10px;
